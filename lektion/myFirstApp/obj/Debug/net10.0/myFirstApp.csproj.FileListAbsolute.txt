@@ -1,0 +1,15 @@
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/bin/Debug/net10.0/myFirstApp
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/bin/Debug/net10.0/myFirstApp.deps.json
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/bin/Debug/net10.0/myFirstApp.runtimeconfig.json
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/bin/Debug/net10.0/myFirstApp.dll
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/bin/Debug/net10.0/myFirstApp.pdb
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.AssemblyInfoInputs.cache
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.AssemblyInfo.cs
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.csproj.CoreCompileInputs.cache
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.sourcelink.json
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.dll
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/refint/myFirstApp.dll
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.pdb
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/myFirstApp.genruntimeconfig.cache
+/Users/isaksvensson/vs code/jensenSkola/lektion/myFirstApp/obj/Debug/net10.0/ref/myFirstApp.dll
