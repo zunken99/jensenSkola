@@ -19,6 +19,6 @@ class Program
 
         balance = int.Parse(depositInput);
 
-        Console.WriteLine($"Ditt saldo är nu: {balance} kr");
+        Console.WriteLine($"Ditt saldo är nu: {balance} kr!");
     }
 }
