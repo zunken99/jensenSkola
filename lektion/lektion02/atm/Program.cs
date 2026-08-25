@@ -19,6 +19,19 @@ class Program
 
         balance = int.Parse(depositInput);
 
-        Console.WriteLine($"Ditt saldo är nu: {balance} kr!");
+        Console.WriteLine($"Ditt saldo är nu: {balance} kr");
+
+        Console.WriteLine("Hur mycket vill du ta ut?");
+        var amount = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(amount))
+        {
+            Console.WriteLine("Inget belopp angivet.");
+            Environment.Exit(0);
+        }
+        Console.WriteLine($"Du vill ta ut: {amount} kr");
+
+        balance -= int.Parse(amount);
+        Console.WriteLine($"Ditt saldo är nu: {balance} kr");
+
     }
 }
