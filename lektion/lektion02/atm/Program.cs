@@ -31,7 +31,7 @@ class Program
         Console.WriteLine($"Du vill ta ut: {amount} kr");
 
         balance -= int.Parse(amount);
-        Console.WriteLine($"Ditt saldo är nu: {balance} kr");
+        Console.WriteLine($"Ditt saldo är nu: {balance} kr!");
 
     }
 }
