@@ -1,1 +1,1 @@
-[{"UserId":"333","Pin":"4444","Balance":100},{"UserId":"isak","Pin":"1234","Balance":520}]
+[{"UserId":"333","PinHash":"","PinSalt":"","Balance":100},{"UserId":"isak","PinHash":"","PinSalt":"","Balance":520},{"UserId":"cleogodis","PinHash":"fJs06JSDrJqMvpVjiJNyiGnRfou044YA0nsk0VojH3M=","PinSalt":"YesDei8S6iy5P1r0YgtN6A==","Balance":0},{"UserId":"test","PinHash":"Fbsuam8auVI7d6y0HylqZKxs4Npz1tkfPNFe1slXmx0=","PinSalt":"rEMuYHEd57/Rv68HOmC9Pw==","Balance":1000}]

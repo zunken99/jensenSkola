@@ -18,14 +18,7 @@ class Program
     static void Main()
     {
         LoadUsers();
-
-        if (ChooseOption())
-        {
-            ShowMenu();
-        }
-        
-
-
+        ChooseOption();
     }
     static void LoadUsers()
     {
@@ -97,6 +90,7 @@ class Program
         if (user != null && VerifyPin(inputPin, user))
         {
             Console.WriteLine("Inloggning lyckades.");
+            RunMenu(user);
             return true;
         }
         else
@@ -133,13 +127,18 @@ class Program
         SaveUsers();
         Console.WriteLine($"Användare med ID {inputId} har skapats.");
 
-        int balance = newUser.Balance;
+        RunMenu(newUser);
+    }
+
+    static void RunMenu(User user)
+    {
+        int balance = user.Balance;
         while (true)
         {
             ShowMenu();
             int choice = int.Parse(Console.ReadLine());
             bool shouldContinue = HandleUserChoice(choice, ref balance);
-            newUser.Balance = balance;
+            user.Balance = balance;
             SaveUsers();
 
             if (!shouldContinue)
