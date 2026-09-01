@@ -64,12 +64,12 @@ class Program
         int choice = int.Parse(Console.ReadLine());
         if (choice == 1)
         {
-            CreateUser(12345); // Exempel på ett användar-ID
+            CreateUser(12345); 
             return true;
         }
         else if (choice == 2)
         {
-            return Login(12345); // Exempel på ett användar-ID
+            return Login(12345); 
         }
         else
         {
