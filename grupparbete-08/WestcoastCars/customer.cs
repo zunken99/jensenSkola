@@ -1,0 +1,7 @@
+namespace WestcoastCars;
+
+
+class Customer
+{
+    
+}
