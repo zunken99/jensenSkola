@@ -1,3 +1,6 @@
+using System.Text.Encodings.Web;
+using System.Text.Json;
+
 namespace WestcoastCars;
 
 public class OrganizationCustomer : Customer
@@ -10,5 +13,17 @@ public class OrganizationCustomer : Customer
     {
         OrganizationName = organizationName;
         OrganizationNumber = organizationNumber;
+    }
+
+    public override void WriteCustomerInfoJSON(string jsonFilePath)
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        };
+        string json = JsonSerializer.Serialize(this, options);
+        File.AppendAllText(jsonFilePath, "\n" + json);
     }
 }
