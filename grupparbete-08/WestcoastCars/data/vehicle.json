@@ -1,0 +1,37 @@
+
+{
+  "engineSize": "2.0L",
+  "transmissionType": "Automatic",
+  "numberOfDoors": "5",
+  "make": "Volvo",
+  "model": "V90",
+  "year": 2020,
+  "color": "Black",
+  "mileage": "15000",
+  "fuelType": "Diesel",
+  "registrationNumber": "ABC123"
+}
+{
+  "type": "Cruiser",
+  "make": "Harley-Davidson",
+  "model": "Street 750",
+  "year": 2019,
+  "color": "Red",
+  "mileage": "5000",
+  "fuelType": "Petrol",
+  "registrationNumber": "XYZ789"
+}
+{
+  "loadCapacity": 20000,
+  "hasTailLift": true,
+  "engineSize": "12.7L",
+  "transmissionType": "Manual",
+  "numberOfDoors": "2",
+  "make": "Scania",
+  "model": "R500",
+  "year": 2021,
+  "color": "White",
+  "mileage": "20000",
+  "fuelType": "Diesel",
+  "registrationNumber": "TRK456"
+}
