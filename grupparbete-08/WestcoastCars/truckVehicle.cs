@@ -1,3 +1,6 @@
+using System.Text.Encodings.Web;
+using System.Text.Json;
+
 namespace WestcoastCars;
 
 public class Truck(
@@ -14,5 +17,16 @@ public class Truck(
         base.DisplayVehicleInfo();
         Console.WriteLine($"Load Capacity: {LoadCapacity} kg");
         Console.WriteLine($"Has Tail Lift: {HasTailLift}");
+    }
+    public override void WriteVehicleInfoJSON(string jsonFilePath)
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        };
+        string json = JsonSerializer.Serialize(this, options);
+        File.AppendAllText(jsonFilePath, "\n" + json);
     }
 }

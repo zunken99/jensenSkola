@@ -11,6 +11,7 @@ public abstract class Vehicle(string make, string model, int year, string color,
     public string RegistrationNumber { get; set; } = registrationNumber;
 
     public abstract void DisplayVehicleInfo();
+    public abstract void WriteVehicleInfoJSON(string jsonFilePath);
     
 }
     

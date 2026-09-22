@@ -1,3 +1,6 @@
+using System.Text.Encodings.Web;
+using System.Text.Json;
+
 namespace WestcoastCars;
 
 public class Bike : Vehicle
@@ -20,5 +23,16 @@ public class Bike : Vehicle
         Console.WriteLine($"Fuel Type: {FuelType}");
         Console.WriteLine($"Registration Number: {RegistrationNumber}");
         Console.WriteLine($"Type: {Type}");
+    }
+    public override void WriteVehicleInfoJSON(string jsonFilePath)
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        };
+        string json = JsonSerializer.Serialize(this, options);
+        File.AppendAllText(jsonFilePath, "\n" + json);
     }
 }

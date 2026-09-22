@@ -1,3 +1,6 @@
+using System.Text.Encodings.Web;
+using System.Text.Json;
+
 namespace WestcoastCars;
 
 public class Car : Vehicle
@@ -27,5 +30,16 @@ public class Car : Vehicle
         Console.WriteLine($"Engine Size: {EngineSize}");
         Console.WriteLine($"Transmission Type: {TransmissionType}");
         Console.WriteLine($"Number of Doors: {NumberOfDoors}");
+    }
+    public override void WriteVehicleInfoJSON(string jsonFilePath)
+    {
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true,
+            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+        };
+        string json = JsonSerializer.Serialize(this, options);
+        File.AppendAllText(jsonFilePath, "\n" + json);
     }
 }
