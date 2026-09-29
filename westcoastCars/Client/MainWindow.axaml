@@ -6,12 +6,61 @@
         x:Class="Client.MainWindow"
         Width="1280" 
         Height="960"
-        Background="#D714001D"
+        Background="#020618"
         Foreground="White"
         Title="Westcoast Cars">
-    <StackPanel Background="#27002B" Spacing="20" Margin="10 15">
+
+        <Grid ColumnDefinitions="auto,*">
+                <Border BorderBrush="#25022081" BorderThickness="0 0 2 0" Padding="10" Background="#8307002B">
+                <Grid RowDefinitions="*,auto">
+                <StackPanel Spacing="5">
+                        <TextBlock FontSize="25" Text="Westcoast Cars"/>
+                        <Button Content="Fordon" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                        <Button Content="Kunder" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                        <Button Content="Verkstad" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                        <Button Content="Service Bokning" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                        <Button Content="Reservdelar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                </StackPanel>
+                <Button Grid.Row="1" Content="Inställningar" Foreground="#ffffff" Background="#14144F" HorizontalAlignment="Stretch"/>
+                </Grid>
+                </Border>
+                <StackPanel Grid.Column="1" Background="#00313D" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Andra kolumnen" FontSize="30" />
+                        <TextBox PlaceholderText="Skriv här:" Name="Manufacturer" FontSize="30" />
+                        <TextBlock FontSize="30" Text="{Binding #Manufacturer.Text}" />
+                </StackPanel>
+        </Grid>
+        
+        
+        
+        
+        
+        <!-- <Grid ColumnDefinitions="auto,auto,100,*" RowDefinitions="300,500">
+                <StackPanel Grid.Column="0" Grid.Row="1">
+                        <TextBlock Text="Här är jag!"/>
+                        <TextBlock Text="Här är jag!"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                        <TextBlock Text="Här är jag!"/>
+                        <TextBlock Text="Här är jag!"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Grid.Row="1">
+                        <TextBlock Text="Här är jag!"/>
+                        <TextBlock Text="Här är jag!"/>
+                </StackPanel>
+                <StackPanel Grid.Column="3">
+                        <TextBlock Text="Här är jag!"/>
+                        <TextBlock Text="Här är jag!"/>
+                </StackPanel>
+        </Grid> -->
+
+
+
+
+    <!-- <StackPanel Background="#27002B" Spacing="20" Margin="10 15">
     <TextBlock Background="#35033F" Padding="20 10" FontSize="20" FontWeight="DemiBold" HorizontalAlignment="Center" Text="Welcome to Westcoast Cars!"/>
-    <Button Click="Button_Click" 
+    <Button Name="Button"
+            Click="Button_Click" 
             FontSize="20" 
             HorizontalAlignment="Center" 
             Background="#54E276FD" 
@@ -19,5 +68,15 @@
             CornerRadius="5">
             Klicka inte!
     </Button>
-    </StackPanel>
+    <Button Name="Savebutton"
+            Click="Savebutton_Click" 
+            FontSize="20" 
+            HorizontalAlignment="Center" 
+            Background="#54E276FD" 
+            Foreground="#ffffff" 
+            CornerRadius="5">
+            Klicka!
+    </Button>
+
+    </StackPanel> -->
 </Window>

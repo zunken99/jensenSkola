@@ -16,4 +16,9 @@ public partial class MainWindow : Window
         Console.WriteLine("Du klickade!");
         Debug.WriteLine("Du klickade i debugläge!");
     }
+
+    private void Savebutton_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Console.WriteLine("Du sparade med ett klick!");
+    }
 }
