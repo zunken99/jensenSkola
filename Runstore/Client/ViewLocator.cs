@@ -12,7 +12,9 @@ public class ViewLocator : IDataTemplate
         if(data is null) return null;
 
         //find right view for the given viewmodel
-        var viewName = data.GetType().FullName!.Replace("ViewModel", "View", StringComparison.InvariantCulture);
+        var viewName = data.GetType().FullName!
+            .Replace("Viewmodels.", "Views.", StringComparison.Ordinal)
+            .Replace("ViewModel", "View", StringComparison.Ordinal);
         var viewType = Type.GetType(viewName);
 
         if(viewType is null) return null;

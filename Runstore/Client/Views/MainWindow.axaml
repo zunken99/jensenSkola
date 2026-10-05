@@ -8,11 +8,11 @@
         x:DataType="vm:MainWindowViewModel"
         Title="Client">
 
-        <StackPanel>
+        <StackPanel Spacing="10">
             
-            <Button Command="{Binding GoToHomeCommand}" Background="Blue" FontSize="30" />
-            <Button Command="{Binding GoToProductsCommand}" Background="Red" FontSize="30"/>
-            <Button Command="{Binding GoToCustomerCommand}" Background="Green" FontSize="30"/>
+            <Button Command="{Binding GoToHomeCommand}" Background="Blue" FontSize="30">Home</Button>
+            <Button Command="{Binding GoToProductsCommand}" Background="Red" FontSize="30">Products</Button>
+            <Button Command="{Binding GoToCustomerCommand}" Background="Green" FontSize="30">Customer</Button>
             <UserControl Padding="20" Content="{Binding CurrentView}" />
 </StackPanel>
 </Window>
