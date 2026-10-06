@@ -6,6 +6,8 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Client.Views.ProductView"
              x:DataType="vm:ProductViewModel">
+
     <TextBlock Text="{Binding PageTitle}"
             FontSize="30" Foreground="White"/>
+
 </UserControl>

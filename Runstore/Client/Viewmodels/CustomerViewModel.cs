@@ -5,7 +5,8 @@ namespace Client.Viewmodels;
 
 public partial class CustomerViewModel : ViewModelBase
 {
-    [ObservableProperty]
-    private string _pageTitle = "Customers";
-
+    public CustomerViewModel()
+    {
+        PageTitle = "Customers";
+    }
 }

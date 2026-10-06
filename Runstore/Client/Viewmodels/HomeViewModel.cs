@@ -5,6 +5,8 @@ namespace Client.Viewmodels;
 
 public partial class HomeViewModel : ViewModelBase
 {
-    [ObservableProperty]
-    private string _pageTitle = "Runstore Admin";
+    public HomeViewModel()
+    {
+        PageTitle = "Runstore Admin";
+    }
 }
