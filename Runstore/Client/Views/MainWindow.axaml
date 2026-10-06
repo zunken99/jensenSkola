@@ -13,6 +13,7 @@
             <Button Command="{Binding GoToHomeCommand}" Background="Blue" FontSize="30">Home</Button>
             <Button Command="{Binding GoToProductsCommand}" Background="Red" FontSize="30">Products</Button>
             <Button Command="{Binding GoToCustomerCommand}" Background="Green" FontSize="30">Customer</Button>
+            <Button Command="{Binding GoToOrdersCommand}" Background="Yellow" FontSize="30">Orders</Button>
             <UserControl Padding="20" Content="{Binding CurrentView}" />
 </StackPanel>
 </Window>

@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Client.Viewmodels;
 
-public partial class ProductsViewModel : ViewModelBase
+public partial class ProductViewModel : ViewModelBase
 {
     [ObservableProperty]
     private string _pageTitle = "Products";
