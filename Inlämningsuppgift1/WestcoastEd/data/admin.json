@@ -1,0 +1,19 @@
+[
+  {
+    "role": "Admin",
+    "hireDate": "1999-02-01",
+    "subject": "Samtliga",
+    "courseNrs": [
+      "123"
+    ],
+    "info": {
+      "firstName": "prov",
+      "lastName": "provsson",
+      "phoneNr": "1230393",
+      "persnoNr": "199919333",
+      "adress": "vägen",
+      "zipCode": "12312",
+      "city": "höör"
+    }
+  }
+]

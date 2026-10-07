@@ -1,0 +1,12 @@
+[
+  {
+    "type": "classroom",
+    "courseType": "Classroom",
+    "courseNr": "123",
+    "courseName": "matte",
+    "startDate": "2001-01-01",
+    "endDate": "2002-01-01",
+    "durationDays": 366,
+    "durationWeeks": 52.3
+  }
+]
