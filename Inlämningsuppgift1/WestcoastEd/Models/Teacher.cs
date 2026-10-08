@@ -11,7 +11,7 @@ namespace WestcoastEd
 
         //Byggs upp efter inläsning 
 
-        [JsonIgnore]
+        [JsonIgnore]   //dublettsäkra
         public List<Course> Courses{get; set;}= [];
 
         public Teacher(PersonInfo info, string subject) : base(info) => Subject = subject;
@@ -43,7 +43,7 @@ namespace WestcoastEd
 
         public override string ToString()
         {
-            var courses = Courses.Count == 0 ? "None" : string.Join(",", Courses.Select(c => c.CourseName));
+            var courses = Courses.Count == 0 ? "None" : string.Join(", ", Courses.Select(c => c.CourseName));
             return $"{base.ToString()}, Subject: {Subject}, Courses: {courses}";
         }
     }
